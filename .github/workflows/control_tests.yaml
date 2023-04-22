@@ -27,6 +27,7 @@ jobs:
 
   create_commit:
     runs-on: ubuntu-latest
+    needs: ["qa"]
     permissions:
       contents: write
     steps:
